@@ -4,7 +4,7 @@ Este é um projeto de estudo de uma landing page para uma psicóloga clínica. A
 
 ## Preview
 
-<!-- adicionar print da página -->
+
 
 ## Tecnologias
 
@@ -79,8 +79,4 @@ As fases ainda não foram marcadas como concluídas porque não foi informado qu
 
 ## O que aprendi
 
-<!-- escrever com minhas palavras -->
 
-## Créditos
-
-O design foi baseado em um protótipo visual gerado no Figma Make.

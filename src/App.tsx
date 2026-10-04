@@ -1,9 +1,11 @@
-
+import { Header } from "./sections/Header"
 
 function App() {
   return (
     
-    <div></div>
+    <div>
+      <Header />
+    </div>
   )
 }
 
