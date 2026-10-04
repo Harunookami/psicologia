@@ -1,18 +1,20 @@
 import '../styles/variables.css'
-import '../styles/header.module.css'
+import styles from '../styles/header.module.css'
 
 export function Header() {
     return (
-        <div >
-            <a href="#inicio" className='' aria-hidden='true'>
-                <span>
-                    <span className={} />
-                    <span className={}/>
-                    <span className={} />
+        <div className={styles.header}>
+            <a href="#inicio" className={styles.brand} aria-hidden='true'>
+                <span className={styles.brandMark}>
+                    <span className={styles.leaf} />
+                    <span className={styles.leaf}/>
+                    <span className={styles.leaf} />
                 </span>
-                Clínica Escuta
+                <span className={styles.title}>
+                    Clínica Escuta
+                </span>
             </a>
-            <nav >
+            <nav className={styles.nav} >
                 <a href="#sobre">Sobre</a>
                 <a href="#atendimentos">Atendimentos</a>
                 <a href="#comoFunciona">Como funciona</a>

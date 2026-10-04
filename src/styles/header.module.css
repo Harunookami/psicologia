@@ -1,0 +1,44 @@
+.brandMark {
+  position: relative;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+}
+
+.leaf {
+  position: absolute;
+  width: 15px;
+  height: 23px;
+  border: 1.5px solid currentColor;
+  border-radius: 100% 0 100% 0;
+  transform: rotate(-20deg);
+}
+
+.brand {
+    margin-top: 15px;
+}
+
+a {
+    font-family: var(--font-display);
+    text-decoration: none;
+   
+}
+
+.title {
+    font-size: 22px;
+}
+
+.header { 
+    width: 100%;
+    height: 80px;
+    border: 1px solid var(--blue);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    gap: 24px;
+}
