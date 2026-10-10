@@ -2,6 +2,7 @@
 import styles from './Header.module.css'
 import { ButtonLink } from '../components/ButtonLink'
 import { WHATSAPP_URL } from '../data/contato'
+import { ArrowRight } from 'lucide-react';
 
 type NavLink = {
     href: string;
@@ -36,7 +37,9 @@ export function Header() {
                     ))}
                 </nav>
 
-                <ButtonLink href={WHATSAPP_URL} size="small" external>Agendar</ButtonLink>
+                <ButtonLink href={WHATSAPP_URL} size="small" external>Agendar
+                    <ArrowRight size={18} aria-hidden="true" />
+                </ButtonLink>
             </div>
 
         </header>

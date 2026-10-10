@@ -1,0 +1,148 @@
+.hero {
+  min-height: 100svh;
+  padding: 124px 0 76px;
+  overflow: hidden;
+}
+
+.inner {
+  width: min(100% - 40px, 1190px);
+  margin-inline: auto;
+  display: grid;
+  gap: 64px;
+}
+
+.eyebrow {
+  margin: 0 0 18px;
+  color: var(--pine);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.eyebrow::before {
+  content: "";
+  display: inline-block;
+  width: 34px;
+  height: 1px;
+  margin: 0 12px 4px 0;
+  background: var(--blue);
+}
+
+.title {
+  max-width: 740px;
+  margin-bottom: 24px;
+  font-size: clamp(40px, 10.4vw, 64px);
+}
+
+.title em {
+  color: var(--pine);
+  font-style: normal;
+}
+
+.description {
+  max-width: 550px;
+  margin-bottom: 30px;
+  color: var(--muted);
+  font-size: 18px;
+}
+
+.availability {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin: 20px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--pine);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--pine) 12%, transparent);
+}
+
+.portrait {
+  position: relative;
+  width: min(94%, 440px);
+  margin: 0;
+}
+
+.backdrop {
+  position: absolute;
+  top: -28px;
+  right: -38px;
+  width: 100%;
+  height: 94%;
+  border-radius: 42% 58% 56% 44% / 35% 42% 58% 65%;
+  background: var(--sand);
+  transform: rotate(5deg);
+}
+
+.frame {
+  position: relative;
+  height: 460px;
+  overflow: hidden;
+  border-radius: 48% 52% 44% 56% / 36% 39% 61% 64%;
+}
+
+.photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+  filter: saturate(0.72) contrast(0.96);
+}
+.card {
+  position: absolute;
+  right: -8px;
+  bottom: -90px;
+  display: flex;
+  flex-direction: column;
+  min-width: 215px;
+  padding: 19px 22px;
+  border-left: 3px solid var(--blue);
+  background: var(--surface);
+}
+
+.cardLabel,
+.cardInfo {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.cardName {
+  color: var(--pine-dark);
+  font-family: var(--font-display);
+  font-size: 21px;
+  font-weight: 400;
+}
+
+@media (min-width: 760px) {
+  .hero {
+    padding-top: 150px;
+  }
+
+  .inner {
+    width: min(100% - 80px, 1180px);
+  }
+
+  inner {
+    width: min(100% - 80px, 1180px);
+    grid-template-columns: minmax(0, 1.2fr) minmax(330px, 0.8fr);
+    align-items: center;
+    gap: 70px;
+  }
+
+  .frame {
+    height: 520px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .inner {
+    grid-template-columns: minmax(0, 1.25fr) 420px;
+    gap: 100px;
+  }
+}
