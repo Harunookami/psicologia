@@ -11,22 +11,6 @@
   gap: 64px;
 }
 
-.eyebrow {
-  margin: 0 0 18px;
-  color: var(--pine);
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-}
-
-.eyebrow::before {
-  content: "";
-  display: inline-block;
-  width: 34px;
-  height: 1px;
-  margin: 0 12px 4px 0;
-  background: var(--blue);
-}
 
 .title {
   max-width: 740px;
@@ -97,7 +81,7 @@
 .card {
   position: absolute;
   right: -8px;
-  bottom: -90px;
+  bottom: 25px;
   display: flex;
   flex-direction: column;
   min-width: 215px;

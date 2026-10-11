@@ -1,0 +1,23 @@
+.eyebrow {
+    margin: 0 0 18px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+}
+
+.eyebrow::before {
+    content: "";
+    display: inline-block;
+    width: 34px;
+    height: 1px;
+    margin: 0 12px 4px 0;
+    background: var(--blue);
+}
+
+.default {
+    color: var(--pine);
+}
+
+.light {
+    color: var(--sand);
+}

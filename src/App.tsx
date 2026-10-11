@@ -1,4 +1,5 @@
 import { Cartao } from './components/Cartao'
+import { Sobre } from './components/Sobre'
 import { Header } from './sections/Header'
 import { Hero } from './sections/Hero'
 
@@ -32,6 +33,7 @@ function App() {
       <Header />
       <main>
         <Hero />
+        <Sobre />
         {servicos.map((servico) => (
           <Cartao
             key={servico.titulo}
