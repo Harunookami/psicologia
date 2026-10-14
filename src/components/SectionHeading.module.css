@@ -1,11 +1,28 @@
 .title {
-    max-width: 670px;
-    margin-bottom: 24px;
-    font-size: clamp(38px, 8vw, 54px);
+  max-width: 670px;
+  margin-bottom: 24px;
+  font-size: clamp(38px, 8vw, 54px);
 }
 
-.descriptio  {
-    max-width: 610px;
+.descriptio {
+  max-width: 610px;
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+@media (min-width: 760px) {
+  .split {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: end;
+    column-gap: 70px;
+  }
+
+  .split > :first-child {
+    grid-column: 1 / -1;
+  }
+
+  .split .title {
     margin-bottom: 0;
-    color: var(--muted);
+  }
 }
